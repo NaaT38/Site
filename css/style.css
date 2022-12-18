@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+header {
+    background-color: #000000;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px ;
+}
+
+.logo{
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1.8em;
+}
+.logo:hover{
+    color: #494848;
+}
+.navigation a{
+    text-decoration: none;
+    color: #fcfcfc;
+    font-weight: 300;
+    font-size: 19px;
+    padding-left: 30px;
+}
+
+.navigation a:hover{
+    color: #494848;
+}
+
+section{
+    padding: 100px 200px;
+}
+
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(images/2.png) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.main h2{
+    color: #ece5e5;
+    margin-bottom: 15px;
+}
+
+.main-bts {
+    color: #fff;
+    background-color: #101112;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    transition: 0.7s ease;
+    position: relative;
+    left: 75px;
+}
+
+.main-bts:hover {
+    color: #ffffff;
+    background-color: #494848;
+    transform: scale(1.1);
+
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 1.7em;
+    padding-right: 20px;
+    display: inline-block;
+    position: relative;
+    left: 91px;
+}
+.social-icons a:hover{
+    color: #494848;
+}
+
+.about img{
+    -webkit-box-shadow: 6px 6px 20px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 6px 20px -7px rgba(0,0,0,0.75);
+    box-shadow: 6px 6px 20px -7px rgba(0,0,0,0.75);
+}
+
+.card{
+    border: none;
+    outline: none;
+    -webkit-box-shadow: 6px 6px 20px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 6px 20px -7px rgba(0,0,0,0.75);
+    box-shadow: 6px 6px 20px -7px rgba(0,0,0,0.75);
+}
+.card p{
+    color: gray;
+}
+.circle{
+    height: 70px;
+    width: 70px;
+    background-color: lightgrey;
+    color: black;
+    padding: 12px;
+    font-size: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.card:hover .circle{
+    background-color: black;
+    color: white;
+    transition: 0.7s;
+}
+
+
+
+
+
+@media (max-width:1023px){
+    header{
+        padding: 12px 20px;
+    }    
+    .navigation a{
+        font-size: 0.9em;
+        padding-left: 5px;
+    }
+    section{
+        padding: 80px 20px;
+    }
+    .logo{
+        font-size: 1em;
+        font-weight: 50;
+    }
+    .main h2{
+        padding-left: 26px;
+    }
+}
